@@ -1,6 +1,6 @@
 const { Sequelize } = require('sequelize');
 const toBool = (x) => x == 'true'
-const DB_URL =  process.env.DATABASE_URL || '';
+const DB_URL =  process.env.DATABASE_URL || 'postgresql://noble_dev_vl5k_user:Yd77j5BkCUpzT5yIHNJKaAvGbKMPM9Ob@dpg-d04chkc9c44c739gj9h0-a/noble_dev_vl5k';
 
 module.exports = {
   ANTICALL_END: toBool(process.env.ANTICALL_END) || true,
